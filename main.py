@@ -4,7 +4,6 @@ import pickle
 app=Flask(__name__)
 file=open("model.pkl","rb")
 random_Forest=pickle.load(file)
-file.close()
 
 @app.route("/", methods=["GET","POST"])
 def home():
